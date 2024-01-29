@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PersonalInfo from "./components/PersonalDetails";
+import CV from "./components/CV";
 
 function App() {
   const [infoDetails, setInfoDetails] = useState({ name: "", phoneNumber: "", email: "" })
@@ -20,6 +21,11 @@ function App() {
         email={infoDetails.email}
         phoneNumber={infoDetails.phoneNumber}
       />
+      <CV
+        personalInfo={infoDetails}
+      />
+
+      
     </>
   );
 }
