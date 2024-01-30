@@ -1,3 +1,5 @@
+import "../styles/PersonalInfo.css"
+
 export default function PersonalInfo({ onChange, name, email, phoneNumber }) {
   return (
     <form>

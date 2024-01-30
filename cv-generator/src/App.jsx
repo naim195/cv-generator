@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PersonalInfo from "./components/PersonalDetails";
 import CV from "./components/CV";
+import "./styles/App.css"
 
 function App() {
   const [infoDetails, setInfoDetails] = useState({ name: "", phoneNumber: "", email: "" })
@@ -8,13 +9,13 @@ function App() {
   function handleInfoChange(event) {
     const { name, value } = event.target;
     setInfoDetails((prevInfoDetails) => ({ ...prevInfoDetails, [name]: value }))
-    console.log(value);
+    
   }
   
   
   
   return (
-    <>
+    <div className="app">
       <PersonalInfo
         onChange={handleInfoChange}
         name={infoDetails.name}
@@ -26,7 +27,7 @@ function App() {
       />
 
       
-    </>
+    </div>
   );
 }
 
