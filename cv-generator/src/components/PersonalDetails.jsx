@@ -1,4 +1,4 @@
-import "../styles/PersonalInfo.css"
+import "../styles/PersonalInfo.css";
 
 export default function PersonalInfo({ onChange, name, email, phoneNumber }) {
   return (
@@ -11,8 +11,12 @@ export default function PersonalInfo({ onChange, name, email, phoneNumber }) {
       <input type="email" onChange={onChange} name="email" value={email} />
       <br />
       <label htmlFor="PhNumber">Phone Number:</label>
-      <input type="text" onChange={onChange} name="phoneNumber" value={phoneNumber} />
-      
+      <input
+        type="text"
+        onChange={onChange}
+        name="phoneNumber"
+        value={phoneNumber}
+      />
     </form>
   );
 }
