@@ -1,6 +1,6 @@
 import "../styles/PersonalInfo.css";
 
-export default function PersonalInfo({ onChange, name, email, phoneNumber }) {
+export default function PersonalInfo({ onChange, name, email, phoneNumber , year,branch}) {
   return (
     <form>
       <h2>Personal Details</h2>
@@ -17,6 +17,12 @@ export default function PersonalInfo({ onChange, name, email, phoneNumber }) {
         name="phoneNumber"
         value={phoneNumber}
       />
+      <br />
+      <label htmlFor="year">Year: </label>
+      <input type="text" onChange={onChange} name="year" value={year} />
+      <br />
+      <label htmlFor="branch">Branch: </label>
+      <input type="text" onChange={onChange} name="branch" value={branch} />
     </form>
   );
 }

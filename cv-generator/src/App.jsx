@@ -18,6 +18,9 @@ function App() {
     mainResponsibilities: "",
     dateFrom: "",
     dateUntil: "",
+    year: "",
+    branch: ""
+    
   });
 
   function handleInfoChange(event) {
@@ -36,6 +39,8 @@ function App() {
           name={infoDetails.name}
           email={infoDetails.email}
           phoneNumber={infoDetails.phoneNumber}
+          year={infoDetails.year}
+          branch={infoDetails.branch}
         />
         <Education
           onChange={handleInfoChange}
@@ -57,6 +62,8 @@ function App() {
           name: infoDetails.name,
           email: infoDetails.email,
           phoneNumber: infoDetails.phoneNumber,
+          year: infoDetails.year,
+          branch: infoDetails.branch
         }}
         education={{
           schoolName: infoDetails.schoolName,

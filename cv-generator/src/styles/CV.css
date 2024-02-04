@@ -1,7 +1,7 @@
 .cv-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
   padding: 20px;
   border: 3px solid black;
   border-radius: 5px;
@@ -10,16 +10,7 @@
   justify-content: center;
 }
 
-.cv-body h2 {
-  margin-bottom: 10px;
-}
-
-.cv-body div span {
-  margin-right: 10px;
-}
-
-.contact-details {
+.details{
   display: flex;
   justify-content: space-between;
-  width: 75%;
 }
