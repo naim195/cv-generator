@@ -1,28 +1,61 @@
+import { TextField } from "@mui/material";
 import "../styles/PersonalInfo.css";
 
-export default function PersonalInfo({ onChange, name, email, phoneNumber , year,branch}) {
+export default function PersonalInfo({
+  onChange,
+  name,
+  email,
+  phoneNumber,
+  year,
+  branch,
+}) {
   return (
     <form>
       <h2>Personal Details</h2>
-      <label htmlFor="name">Name:</label>
-      <input type="text" onChange={onChange} name="name" value={name} />
-      <br />
-      <label htmlFor="email">E-mail:</label>
-      <input type="email" onChange={onChange} name="email" value={email} />
-      <br />
-      <label htmlFor="PhNumber">Phone Number:</label>
-      <input
+      <TextField
         type="text"
         onChange={onChange}
-        name="phoneNumber"
-        value={phoneNumber}
+        label="Name"
+        name="name"
+        value={name}
+        variant="outlined"
       />
       <br />
-      <label htmlFor="year">Year: </label>
-      <input type="text" onChange={onChange} name="year" value={year} />
+      <TextField
+        type="email"
+        onChange={onChange}
+        label="E-mail"
+        name="email"
+        value={email}
+        variant="outlined"
+      />
       <br />
-      <label htmlFor="branch">Branch: </label>
-      <input type="text" onChange={onChange} name="branch" value={branch} />
+      <TextField
+        type="text"
+        onChange={onChange}
+        label="Phone Number"
+        name="phoneNumber"
+        value={phoneNumber}
+        variant="outlined"
+      />
+      <br />
+      <TextField
+        type="text"
+        onChange={onChange}
+        label="Year"
+        name="year"
+        value={year}
+        variant="outlined"
+      />
+      <br />
+      <TextField
+        type="text"
+        onChange={onChange}
+        label="Branch"
+        name="branch"
+        value={branch}
+        variant="outlined"
+      />
     </form>
   );
 }

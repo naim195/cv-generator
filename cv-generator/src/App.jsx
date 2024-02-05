@@ -19,8 +19,7 @@ function App() {
     dateFrom: "",
     dateUntil: "",
     year: "",
-    branch: ""
-    
+    branch: "",
   });
 
   function handleInfoChange(event) {
@@ -63,7 +62,7 @@ function App() {
           email: infoDetails.email,
           phoneNumber: infoDetails.phoneNumber,
           year: infoDetails.year,
-          branch: infoDetails.branch
+          branch: infoDetails.branch,
         }}
         education={{
           schoolName: infoDetails.schoolName,

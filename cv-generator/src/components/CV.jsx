@@ -3,8 +3,8 @@ import "../styles/CV.css";
 export default function CV({ personalInfo, education, experience }) {
   return (
     <div className="cv-body">
-      <h2>{personalInfo.name}</h2>      
-        
+      <h2>{personalInfo.name}</h2>
+
       <div className="details">
         <div className="branch">
           <div>{personalInfo.year} Year Undergraduate</div>
@@ -15,7 +15,7 @@ export default function CV({ personalInfo, education, experience }) {
           <div>{personalInfo.phoneNumber}</div>
         </div>
       </div>
-      
+
       <div className="education-details">
         <h3>Education</h3>
         <p>{education.schoolName}</p>

@@ -1,5 +1,6 @@
 // Education.js
 import "../styles/Education.css";
+import TextField from "@mui/material/TextField";
 
 export default function Education({
   onChange,
